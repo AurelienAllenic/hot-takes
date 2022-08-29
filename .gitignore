@@ -1,0 +1,6 @@
+# exclude everything
+backend/assets/images/*
+node_modules/
+
+# exception to the rule
+!backend/assets/images/.gitkeep 
