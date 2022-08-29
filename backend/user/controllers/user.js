@@ -7,7 +7,5 @@ module.exports = () => {
   console.log("test de l'export user passé");
   router.use("/auth", login());
   router.use("/auth", signup());
-  /* router.post("api/auth/signup", signup.signup);
-  router.post("api/auth/login", login.login);*/
   return router;
 };

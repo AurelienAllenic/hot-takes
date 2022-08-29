@@ -8,16 +8,14 @@ const displayOne = require("../CRUD/sauce-displayOne");
 const modify = require("../CRUD/sauce-modify");
 const deleteSauce = require("../CRUD/sauce-delete");
 const like = require("../like/like");
-//JSON.parse(req.body);
 
 module.exports = () => {
-  console.log("test de l'export sauce passé");
   router.put("/sauces/:id", auth, multer, modify());
   router.post("/sauces", auth, multer, create());
   router.get("/sauces", displayAll());
   router.get("/sauces/:id", displayOne());
   router.delete("/sauces/:id", auth, multer, deleteSauce());
-  router.post("/sauces/:id/like", auth, like());
+  router.post("/sauces/:id/like", like());
 
   return router;
 };

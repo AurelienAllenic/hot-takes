@@ -31,26 +31,3 @@ module.exports = () => {
   });
   return router;
 };
-
-/* console.log("test", req.file);
-    const thing = new Thing({
-      name: req.body.name,
-      manufacturer: req.body.manufacturer,
-      description: req.body.description,
-      imageUrl: req.file.filename,
-      mainPepperIngredient: req.body.mainPepperIngredient,
-      heat: req.body.heat,
-    });
-    thing
-      .save()
-      .then(() => {
-        res.status(201).json({
-          message: "Post saved successfully!",
-        });
-      })
-      .catch((error) => {
-        res.status(400).json({
-          error: error,
-        });
-      });
-  });*/
