@@ -17,6 +17,8 @@ module.exports = () => {
       }`,
       like: 0,
       dislike: 0,
+      usersLiked: [" "],
+      usersDisliked: [" "],
     });
     sauce
       .save()
