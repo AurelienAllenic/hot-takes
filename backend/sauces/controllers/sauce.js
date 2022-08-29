@@ -15,7 +15,7 @@ module.exports = () => {
   router.get("/sauces", displayAll());
   router.get("/sauces/:id", displayOne());
   router.delete("/sauces/:id", auth, multer, deleteSauce());
-  router.post("/sauces/:id/like", like());
+  router.post("/sauces/:id/like", auth, like());
 
   return router;
 };
