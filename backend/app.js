@@ -47,12 +47,11 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(helmet());
-
 app.use(
   "/assets/images",
   express.static(path.join(__dirname, "assets/images"))
 );
+app.use(helmet());
 
 const userRoutes = require("./user/controllers/user");
 const sauceRoutes = require("./sauces/controllers/sauce");
