@@ -12,8 +12,8 @@ const like = require("../like/like");
 module.exports = () => {
   router.put("/sauces/:id", auth, multer, modify());
   router.post("/sauces", auth, multer, create());
-  router.get("/sauces", displayAll());
-  router.get("/sauces/:id", displayOne());
+  router.get("/sauces", auth, displayAll());
+  router.get("/sauces/:id", auth, displayOne());
   router.delete("/sauces/:id", auth, multer, deleteSauce());
   router.post("/sauces/:id/like", auth, like());
 
