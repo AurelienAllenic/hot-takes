@@ -1,7 +1,0 @@
-# exclude everything
-backend/assets/images/*
-node_modules/
-frontend/
-
-# exception to the rule
-!backend/assets/images/.gitkeep 
